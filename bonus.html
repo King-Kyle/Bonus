@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bonus</title>
+</head>
+
+<body>
+  <script>
+
+    function PropData(num) {
+      const resultArray = []
+
+      for (let i = 1; i <= num; i++) {
+        resultArray[i] = i;
+      }
+
+      for (let i = 1; i <= 50; i++) {
+        if (resultArray[i] % 3 === 0 && resultArray[i] % 5 === 0) {
+          resultArray[i] = "PropData"
+        } else if (resultArray[i] % 5 === 0) {
+          resultArray[i] = "Data"
+        } else if (resultArray[i] % 3 === 0) {
+          resultArray[i] = "Prop"
+        };
+      };
+
+      console.log(resultArray)
+    }
+
+    // Input Here
+    console.log(PropData(12));
+
+  </script>
+
+</body>
+
+</html>
